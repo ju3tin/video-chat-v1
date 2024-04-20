@@ -11,7 +11,7 @@ const io = require("socket.io")(server, {
 const { ExpressPeerServer } = require("peer");
 const opinions = {
   debug: true,
-}
+} 
 
 app.use("/peerjs", ExpressPeerServer(server, opinions));
 app.use(express.static("public"));
